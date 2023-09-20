@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>2</title>
+</head>
+<style type="text/css">
+	#box{
+		display: flex;
+		margin: 30px;
+	}
+</style>
+<body>
+	초성을 보고 떠오르는 동물을 입력하시오
+	<div id="box">
+		<div>
+			<p>1. ㅂㅇㄹ</p><input type="text" id="a">
+			<p>2. ㅋㄲㄹ</p><input type="text" id="b">
+			<p>3. ㅇㄹㅁ</p><input type="text" id="c">
+			<p>4. ㄷㄹㄴ</p><input type="text" id="d">
+			<p>5. ㅅㅌㄲ</p><input type="text" id="e">
+			<p>6. ㅊㅅㅁ</p><input type="text" id="f">
+			<p>7. ㄲㅁㄱ</p><input type="text" id="g">
+			<p>8. ㅁㄷㅈ</p><input type="text" id="h">
+		</div>
+		<div>
+			<p>9. ㄷㄹㅈ</p><input type="text" id="j">
+			<p>10. ㄷㅁㅂ</p><input type="text" id="k">
+			<p>11. ㄷㅅㄹ</p><input type="text" id="l">
+			<p>12. ㄴㄱㄹ</p><input type="text" id="m">
+			<p>13. ㅎㄹㅇ</p><input type="text" id="n">
+			<p>14. ㄱㄹㄱ</p><input type="text" id="o">
+			<p>15. ㅇㅅㄹ</p><input type="text" id="p">
+		</div>
+	</div>
+	<button id="q">확인</button>
+	
+	<script type="text/javascript">
+		// 버튼 클릭 이벤트 처리
+		q.onclick = function(){
+			// 정답과 비교
+			if (
+				a.value === '병아리' &&
+				b.value === '코끼리' &&
+				c.value === '얼룩말' &&
+				d.value === '도롱뇽' &&
+				e.value === '산토끼' &&
+				f.value === '청설모' &&
+				g.value === '까마귀' &&
+				h.value === '멧돼지' &&
+				j.value === '다람쥐' &&
+				k.value === '도마뱀' &&
+				l.value === '독수리' &&
+				m.value === '너구리' &&
+				n.value === '호랑이' &&
+				o.value === '기러기' &&
+				p.value === '오소리'
+			)
+			{
+				document.body.innerHTML = "삐빅-정답입니다.";
+			}
+			else{
+				document.body.innerHTML = "삐빅-오답입니다.";
+			}
+		}
+	</script>
+</body>
+</html>
